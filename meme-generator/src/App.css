@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+main {
+  padding: 36px;
+}
 /*! Needs media querys */
 #nav-bar {
   max-width: 100%;
@@ -53,4 +55,24 @@
 #form {
   display: grid;
   grid-template: 40px 40px / 1fr 1fr;
+  gap: 10px;
+  font-family: "Karla", sans-serif;
+}
+
+#form-input {
+  font-family: "Karla", sans-serif;
+border-radius: 5px;
+border: 1px solid #D5D4D8;
+text-indent: 5px;
+}
+
+#form-button {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  grid-column: 1/ -1;
+  font-family: "Karla", sans-serif;
+  background: linear-gradient(to right,
+  rgba(103, 34, 128, 1),
+  rgba(166, 38, 211, 1))
 }

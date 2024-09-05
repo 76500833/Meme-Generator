@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*! Needs media querys */
+#nav-bar {
+  max-width: 100%;
+  justify-content: space-between;
+  height: 85px;
+  background: linear-gradient(to right,
+      rgba(103, 34, 128, 1),
+      rgba(166, 38, 211, 1))
+}
+
+#left-side {
+  display: flex;
+  margin-left: 37px;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+}
+
+#title {
+  font-size: 35.75px;
+  font-weight: bold;
+  font-family: "Karla", sans-serif;
+  color: white;
+  margin-right: auto;
+  align-self: flex-end;
+}
+
+#pepe {
+  width: 75px;
+  align-self: flex-end;
+  /* Align the pepe image to the bottom */
+  margin-left: 60px;
+}
+
+#description {
+  font-family: "Karla", sans-serif;
+  color: white;
+  margin-left: auto;
+  margin-right: 60px;
+  font-size: large;
+
+}
+
+#project-three {
+  color: rgb(0, 24, 118);
+}
+
+#both-forms {
+  display: flex;
+  justify-content: center;
+  height: 110px;
+  align-items: center;
+  font-size: 19px;
+  font-weight: medium;
+  font-family: "Karla", sans-serif;
+  gap: 6.55px;
+  padding: 7.37px 10.64px 7.37px 10.64px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  
+  
+}
+
+/*! How to add padding? */
+#top-form {
+  display: flex;
+  flex-direction: column;
+  width: 225px;
+  margin-bottom: 10px;
+
+}
+
+#bottom-form {
+  display: flex;
+
+  flex-direction: column;
+  width: 225px;
+  margin-bottom: 10px;
+}
+
+#submit {
+  width: 477px;
+  height: 40px;
+  /* top: 163px;
+left: 37px; */
+  gap: 0px;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  color: white;
+  font-weight: bold;
+
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}

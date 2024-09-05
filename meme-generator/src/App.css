@@ -2,10 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
+
 main {
   padding: 36px;
 }
+
 /*! Needs media querys */
 #nav-bar {
   max-width: 100%;
@@ -16,14 +19,7 @@ main {
       rgba(166, 38, 211, 1))
 }
 
-#left-side {
-  display: flex;
-  margin-left: 37px;
-  align-items: center;
-  gap: 10px;
-  height: 100%;
-}
-
+/* Media query for tablets (portrait and landscape) */
 #title {
   font-size: 35.75px;
   font-weight: bold;
@@ -31,13 +27,6 @@ main {
   color: white;
   margin-right: auto;
   align-self: flex-end;
-}
-
-#pepe {
-  width: 75px;
-  align-self: flex-end;
-  /* Align the pepe image to the bottom */
-  margin-left: 60px;
 }
 
 #description {
@@ -48,11 +37,58 @@ main {
   font-size: large;
 }
 
+@media (max-width: 768px) {
+
+  #title {
+    font-size: 14px;
+  }
+
+  #description {
+    font-size: 14px;
+  }
+
+}
+@media (max-width: 394px) {
+
+  #title {
+    font-size: 14px;
+  }
+
+  #description {
+    font-size: 14px;
+  }
+  main {
+    min-width: 394px;
+  }
+  #description {
+    
+  }
+}
+
+#left-side {
+  display: flex;
+  margin-left: 37px;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+}
+
+
+
+#pepe {
+  width: 75px;
+  align-self: flex-end;
+  /* Align the pepe image to the bottom */
+  margin-left: 60px;
+}
+
+
+
 #project-three {
   color: rgb(0, 24, 118);
 }
 
-#form {
+#form-container {
   display: grid;
   grid-template: 40px 40px / 1fr 1fr;
   gap: 10px;
@@ -61,9 +97,9 @@ main {
 
 #form-input {
   font-family: "Karla", sans-serif;
-border-radius: 5px;
-border: 1px solid #D5D4D8;
-text-indent: 5px;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
 }
 
 #form-button {
@@ -73,6 +109,6 @@ text-indent: 5px;
   grid-column: 1/ -1;
   font-family: "Karla", sans-serif;
   background: linear-gradient(to right,
-  rgba(103, 34, 128, 1),
-  rgba(166, 38, 211, 1))
+      rgba(103, 34, 128, 1),
+      rgba(166, 38, 211, 1))
 }

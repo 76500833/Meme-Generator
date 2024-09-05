@@ -4,7 +4,7 @@ function Form() {
     return (
         <>  
         <main>
-            <form id="form"    action="">
+            <div id="form-container" action="">
                 <input type="text" 
                 id="form-input"
                 placeholder="Top Text"
@@ -14,11 +14,9 @@ function Form() {
                 placeholder="Bottom Text"
                 />
             <button id="form-button">Get A New Meme Image</button>
-            </form>
+            </div>
         </main>
-   
-
-         
+        
         </>
     )
 }

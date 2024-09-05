@@ -3,26 +3,22 @@ import React from "react";
 function Form() {
     return (
         <>  
-        <div id="both-forms">
-        <div id="top-form">
-            <label htmlFor="top">Top Text</label>
-            <input
-                type="text"
-                name="top"
-            />
-    </div>
-            <div id="bottom-form">
-            <label htmlFor="bottom">Bottom Text</label>
-            <input
-             
-                type="text"
-                name="bottom"
-            />
-            </div>
-            </div>
-            <div id="button-container">
-            <button id="submit">Submit</button>
-            </div>
+        <main>
+            <form id="form"    action="">
+                <input type="text" 
+                id="form-input"
+                placeholder="Top Text"
+                />
+                <input type="text" 
+                id="form-input"
+                placeholder="Bottom Text"
+                />
+            <button id="form-button">Get A New Meme Image</button>
+            </form>
+        </main>
+   
+
+         
         </>
     )
 }

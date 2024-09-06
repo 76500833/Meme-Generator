@@ -48,6 +48,7 @@ main {
   }
 
 }
+
 @media (max-width: 394px) {
 
   #title {
@@ -57,12 +58,12 @@ main {
   #description {
     font-size: 14px;
   }
+
   main {
     min-width: 394px;
   }
-  #description {
-    
-  }
+
+  #description {}
 }
 
 #left-side {
@@ -111,4 +112,16 @@ main {
   background: linear-gradient(to right,
       rgba(103, 34, 128, 1),
       rgba(166, 38, 211, 1))
+}
+
+#meme-image {
+  width: 250px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#meme-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }

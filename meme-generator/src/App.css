@@ -63,7 +63,6 @@ main {
     min-width: 394px;
   }
 
-  #description {}
 }
 
 #left-side {
@@ -106,6 +105,7 @@ main {
 #form-button {
   color: white;
   border: none;
+  font-size: large;
   border-radius: 5px;
   grid-column: 1/ -1;
   font-family: "Karla", sans-serif;
@@ -115,7 +115,7 @@ main {
 }
 
 #meme-image {
-  width: 250px;
+  width: 315px;
   margin-right: auto;
   margin-left: auto;
 }

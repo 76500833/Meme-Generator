@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+}
+
+main {
+  padding: 36px;
 }
 
 /*! Needs media querys */
@@ -14,14 +19,7 @@
       rgba(166, 38, 211, 1))
 }
 
-#left-side {
-  display: flex;
-  margin-left: 37px;
-  align-items: center;
-  gap: 10px;
-  height: 100%;
-}
-
+/* Media query for tablets (portrait and landscape) */
 #title {
   font-size: 35.75px;
   font-weight: bold;
@@ -31,6 +29,53 @@
   align-self: flex-end;
 }
 
+#description {
+  font-family: "Karla", sans-serif;
+  color: white;
+  margin-left: auto;
+  margin-right: 60px;
+  font-size: large;
+}
+
+@media (max-width: 768px) {
+
+  #title {
+    font-size: 14px;
+  }
+
+  #description {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 394px) {
+
+  #title {
+    font-size: 14px;
+  }
+
+  #description {
+    font-size: 14px;
+  }
+
+  main {
+    min-width: 394px;
+  }
+
+  #description {}
+}
+
+#left-side {
+  display: flex;
+  margin-left: 37px;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+}
+
+
+
 #pepe {
   width: 75px;
   align-self: flex-end;
@@ -38,70 +83,45 @@
   margin-left: 60px;
 }
 
-#description {
-  font-family: "Karla", sans-serif;
-  color: white;
-  margin-left: auto;
-  margin-right: 60px;
-  font-size: large;
 
-}
 
 #project-three {
   color: rgb(0, 24, 118);
 }
 
-#both-forms {
-  display: flex;
-  justify-content: center;
-  height: 110px;
-  align-items: center;
-  font-size: 19px;
-  font-weight: medium;
+#form-container {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 10px;
   font-family: "Karla", sans-serif;
-  gap: 6.55px;
-  padding: 7.37px 10.64px 7.37px 10.64px;
-  width: 80%;
+}
+
+#form-input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+
+#form-button {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  grid-column: 1/ -1;
+  font-family: "Karla", sans-serif;
+  background: linear-gradient(to right,
+      rgba(103, 34, 128, 1),
+      rgba(166, 38, 211, 1))
+}
+
+#meme-image {
+  width: 250px;
   margin-right: auto;
   margin-left: auto;
-  
-  
 }
 
-/*! How to add padding? */
-#top-form {
-  display: flex;
-  flex-direction: column;
-  width: 225px;
-  margin-bottom: 10px;
-
-}
-
-#bottom-form {
-  display: flex;
-
-  flex-direction: column;
-  width: 225px;
-  margin-bottom: 10px;
-}
-
-#submit {
-  width: 477px;
-  height: 40px;
-  /* top: 163px;
-left: 37px; */
-  gap: 0px;
-  border-radius: 5px;
-  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
-  color: white;
-  font-weight: bold;
-
-}
-
-#button-container {
+#meme-container {
   display: flex;
   justify-content: center;
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
+  margin-top: 10px;
 }

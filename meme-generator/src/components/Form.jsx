@@ -37,7 +37,7 @@ function Form() {
                         id="form-button">Get A New Meme Image</button>
                 </div>
                 <div id="meme-container">
-                    <img src={memeImage} id="meme-image" alt="" />
+                    <img src={meme.randomImage} id="meme-image" alt="" />
                 </div>
             </main>
         </>

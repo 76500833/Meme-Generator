@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 main {
@@ -14,9 +13,11 @@ main {
   max-width: 100%;
   justify-content: space-between;
   height: 85px;
-  background: linear-gradient(to right,
-      rgba(103, 34, 128, 1),
-      rgba(166, 38, 211, 1))
+  background: linear-gradient(
+    to right,
+    rgba(103, 34, 128, 1),
+    rgba(166, 38, 211, 1)
+  );
 }
 
 /* Media query for tablets (portrait and landscape) */
@@ -38,7 +39,6 @@ main {
 }
 
 @media (max-width: 768px) {
-
   #title {
     font-size: 14px;
   }
@@ -46,11 +46,9 @@ main {
   #description {
     font-size: 14px;
   }
-
 }
 
 @media (max-width: 394px) {
-
   #title {
     font-size: 14px;
   }
@@ -63,7 +61,8 @@ main {
     min-width: 394px;
   }
 
-  #description {}
+  #description {
+  }
 }
 
 #left-side {
@@ -74,16 +73,12 @@ main {
   height: 100%;
 }
 
-
-
 #pepe {
   width: 75px;
   align-self: flex-end;
   /* Align the pepe image to the bottom */
   margin-left: 60px;
 }
-
-
 
 #project-three {
   color: rgb(0, 24, 118);
@@ -99,7 +94,7 @@ main {
 #form-input {
   font-family: "Karla", sans-serif;
   border-radius: 5px;
-  border: 1px solid #D5D4D8;
+  border: 1px solid #d5d4d8;
   text-indent: 5px;
 }
 
@@ -109,13 +104,15 @@ main {
   border-radius: 5px;
   grid-column: 1/ -1;
   font-family: "Karla", sans-serif;
-  background: linear-gradient(to right,
-      rgba(103, 34, 128, 1),
-      rgba(166, 38, 211, 1))
+  background: linear-gradient(
+    to right,
+    rgba(103, 34, 128, 1),
+    rgba(166, 38, 211, 1)
+  );
 }
 
 #meme-image {
-  width: 250px;
+  width: 500px;
   margin-right: auto;
   margin-left: auto;
 }

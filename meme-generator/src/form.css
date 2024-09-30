@@ -1,0 +1,59 @@
+
+
+#meme-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meme {
+    position: relative;
+    text-align: center;
+}
+
+#meme-image {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+}
+
+.meme-text {
+      font-family: "Roboto", sans-serif;
+    position: absolute;
+    color: black; /* Change text color as needed */
+        width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 
+        2px 2px 0 rgba(255, 255, 255, 1), /* Right white shadow */
+        -2px -2px 0 rgba(255, 255, 255, 1), /* Left white shadow */
+        2px -2px 0 rgba(255, 255, 255, 1), /* Bottom right white shadow */
+        -2px 2px 0 rgba(255, 255, 255, 1), /* Top left white shadow */
+        0 0 5px rgba(0, 0, 0, 0.7); /* Additional shadow for depth */
+    width: 100%;
+}
+
+.meme-text {
+      font-family: "Roboto", sans-serif;
+    position: absolute;
+    color: black; /* Change text color as needed */
+        width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 
+        2px 2px 0 rgba(255, 255, 255, 1), /* Right white shadow */
+        -2px -2px 0 rgba(255, 255, 255, 1), /* Left white shadow */
+        2px -2px 0 rgba(255, 255, 255, 1), /* Bottom right white shadow */
+        -2px 2px 0 rgba(255, 255, 255, 1), /* Top left white shadow */
+        0 0 5px rgba(0, 0, 0, 0.7); /* Additional shadow for depth */
+    width: 100%;
+}
+
+.top {
+    top: 8px; /* Positioning for top text */
+    left: 20%;
+}
+
+.bottom {
+    bottom: 180px; /* Positioning for bottom text */
+}
